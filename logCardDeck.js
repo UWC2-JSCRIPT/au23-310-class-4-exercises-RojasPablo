@@ -58,4 +58,10 @@ const cards = [
  *
  * @param {array} deck A deck of cards
  */
-const logCardDeck = deck => {};
+const logCardDeck = deck => {
+  deck.forEach(card => { // will iterate through each card and display their attributes
+    console.log(`The ${card.displayVal} of ${card.suit} has a value of ${card.val}`) // EXAMPLE: the king of spades has a value of 10
+  })
+};
+//call function
+logCardDeck(cards);
